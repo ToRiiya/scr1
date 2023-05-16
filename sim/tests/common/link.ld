@@ -31,7 +31,7 @@ SECTIONS {
     *(.text.init) 
   } >RAM
   
-  .text.start 0x800: { 
+  .text.start 0x1400: { 
     PROVIDE(__TEXT_END__ = .);
     PROVIDE(__TEXT_START__ = .);
     *(.text.start) 
