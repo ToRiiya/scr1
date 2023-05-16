@@ -118,7 +118,7 @@ trap_vector:                                                            \
         beq a4, a5, _report;                                            \
         li a5, CAUSE_MACHINE_ECALL;                                     \
         beq a4, a5, _report;                                            \
-         /* init for loop, 0xf0000000 address for print */               \
+         /* init for loop, 0xf0000000 address for print */              \
         lui a6, 0xf0000;                                                \
         la a7, MSG_TRAP;                                                \
 next_iter:                                                              \
